@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.layout {
+    display: flex;
+    min-height: 100vh; 
+}
+.lado {
+    flex: 1; 
+    background-color: #005ca9; 
+}
+.centro {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: white;
+    padding: 20px;
+}
+.tela {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border: 3px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#titulo-tela {
+    text-align: center; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+}
+.caixa-interna {
+    width: 100%;
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+    border: 1px solid #333; 
+    padding: 15px;
+    margin-top: 15px; 
+    box-sizing: border-box;
+}
+.caixa-interna form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.caixa-interna label {
+    flex: 1 1 100%;
+    font-weight: bold;
+}
+.caixa-interna input, 
+.caixa-interna select {
+    flex: 1 1 45%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.espaco {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+#saiba-mais {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+#tema {
+    margin-top: -5px;
+}
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+    .lado {
+        display: none; 
+    }
+    .centro {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+    .caixa-interna input, 
+    .caixa-interna select {
+        flex: 1 1 100%;
+    }
+
+    #titulo-tela {
+        font-size: 1.2rem;
+    }
+}
+.radio-groupFamiliar {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    margin: 5px 0;
+}
+.radio-groupFamiliar label {
+    font-weight: normal;
+    flex: unset; 
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005ca9; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover, button:focus {
+    background-color: #004a8e; 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.caixa-interna input:focus,
+.caixa-interna select:focus,
+.caixa-interna textarea:focus {
+    outline: none;
+    border-color: #005ca9; 
+    box-shadow: 0 0 5px #005ca9; 
+}
+#saiba-mais a:visited {
+    color: #551A8B; 
+}

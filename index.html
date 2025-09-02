@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="lado"></div>
+        
+        <div class="centro">
+            <div class="tela">
+                <h1 id="titulo-tela">Formulário de Cadastro estilo E-SUS</h1>
+                <div class="caixa-interna">
+                    <h4 id="tema">Identificação do Usuário Cidadão:</h4>
+                    <form action="#" method="post">
+                        <label for="CNS">CNS DO CIDADÃO:</label>
+                        <input type="text" id="CNSCid" name="CNS DO CIDADÃO" required>
+
+                        <label>É responsável Familiar:</label>
+                        <div class="radio-groupFamiliar">
+                        <input type="radio" id="resposta-sim" name="responsavel-familiar" value="sim">
+                        <label for="resposta-sim">Sim</label>
+
+                        <input type="radio" id="resposta-nao" name="responsavel-familiar" value="nao">
+                        <label for="resposta-nao">Não</label>
+                        </div>
+
+                        <label for="CNSResp">CNS DO RESPONSÁVEL FAMILIAR</label>
+                        <input type="text" id="CNSResp" name="CNS DO RESPONSÁVEL FAMILIAR">
+
+                        <div class="espaco"></div>
+
+                        <label for="NomeCompleto">Nome Completo:</label>
+                        <input type="text" id="nome-completo" name="nome-completo" required>
+
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataN" name="dataN" required>
+
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        
+                        <label for="raca">Raça/Cor:</label>
+                        <select id="raca" name="raca" required>
+                            <option value="">Selecione</option>
+                            <option value="branca">Branca</option>
+                            <option value="preta">Preta</option>
+                            <option value="parda">Parda</option>
+                            <option value="amarela">Amarela</option>
+                            <option value="indigena">Indígena</option>
+                            <option value="nao-declarada">Não Declarada</option>
+                        </select>
+                        
+                        <label for="nome-completo-da-mae">Nome Completo da Mãe:</label>
+                        <input type="text" id="nome-completo-da-mae" name="nome-completo-da-mae" required>
+
+                        <label for="nome-completo-do-pai">Nome Completo do Pai:</label>
+                        <input type="text" id="nome-completo-do-pai" name="nome-completo-do-pai">
+
+                        <label>Nacionalidade:</label>
+                        <div class="radio-group">
+                        <input type="radio" id="nacionalidade-brasileira" name="nacionalidade" value="brasileira" required>
+                        <label for="nacionalidade-brasileira">Brasileira</label>
+
+                        <input type="radio" id="nacionalidade-naturalizado" name="nacionalidade" value="naturalizado">
+                        <label for="nacionalidade-naturalizado">Naturalizado</label>
+
+                        <input type="radio" id="nacionalidade-estrangeiro" name="nacionalidade" value="estrangeiro">
+                        <label for="nacionalidade-estrangeiro">Estrangeiro</label>
+                        </div>
+
+                        <label for="pais-nascimento">País de Nascimento:</label>
+                        <input type="text" id="pais-nascimento" name="pais-nascimento" required>
+
+                        <label for="data-naturalizacao">Data de Naturalização:</label>
+                        <input type="date" id="data-naturalizacao" name="data-naturalizacao">
+
+                        <label for="portaria-naturalizacao">Portaria de Naturalização:</label>
+                        <input type="text" id="portaria-naturalizacao" name="portaria-naturalizacao">
+
+                        <label for="municipio-nascimento">Município e UF de Nascimento:</label>
+                        <input type="text" id="municipio-nascimento" name="municipio-nascimento" required>
+
+                        <label for="data-entrada-brasil">Data de Entrada no Brasil:</label>
+                        <input type="date" id="data-entrada-brasil" name="data-entrada-brasil">
+
+                        <label for="telefone-celular">Telefone Celular:</label>
+                        <input type="tel" id="telefone-celular" name="telefone-celular" placeholder="(xx) xxxxx-xxxx">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+
+                        <div class="espaco"></div>
+
+                        <button type="submit">Enviar</button>
+                      </form>
+                </div>
+            </div>
+
+            <img src="https://sisaps.saude.gov.br/sistemas/esusaps/img/bannerPage/logo-esusaps.svg" width="300px" height="200px">
+
+            <h4 id="saiba-mais">
+                <a href="https://sisaps.saude.gov.br/sistemas/esusaps/" target="_blank">Saiba mais</a>
+            </h4>
+        </div>
+
+        <div class="lado"></div>
+    </div>
+</body>
+</html>
