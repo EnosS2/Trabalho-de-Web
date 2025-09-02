@@ -1,17 +1,29 @@
-Desenvolver um frontend simples para o setor da saúde utilizando textos, imagens, links
-formulários HTML e estilização com CSS. O tema e contexto de página deverá ser
-definido pelo aluno(a), porém, deve ter como inspiração aplicações no setor da saúde.
-Por exemplo, uma página de cadastro de pacientes no SUS, apresentação de
-informações sobre doenças ou controle de medicamentos.
-A interface deverá ser bem organizada e conter, obrigatoriamente, pelo menos os
-seguintes elementos:
- Textos, imagens e links
- Elementos de formulário
-◦ Obrigatório utilizar: input, label, select, textarea, radio, checkbox e button
-◦ Demais elementos podem ser utilizados conforme a necessidade
- Estilização com CSS (em um arquivo externo)
-◦ Estilização mínima: cores, bordas, espaçamento, fontes
-◦ Destaque para botões e campos em foco (utilizar pseudo-classes, como por
-exemplo :hover, :focus e :visited)
- Página deve possuir um index.html e ser possível de rodar no 127.0.0.1
-◦ Tomem cuidado com os caminhos absolutos e relativos
+# Projeto Frontend para o Setor da Saúde
+
+Este projeto é um **frontend simples** desenvolvido como parte de um trabalho acadêmico. Ele tem como objetivo simular uma aplicação para o setor de saúde, utilizando **HTML** e **CSS**.
+
+O tema e o contexto da página foram definidos livremente, inspirados em aplicações como um cadastro de pacientes do SUS, uma página informativa sobre doenças ou um sistema de controle de medicamentos.
+
+---
+
+### Requisitos e Funcionalidades
+
+O projeto foi construído para atender aos seguintes requisitos, obrigatórios na avaliação:
+
+* **Estrutura da Página (`index.html`)**:
+    * Uso de textos, imagens e links.
+    * Formulário com elementos obrigatórios: `input`, `label`, `select`, `textarea`, `radio`, `checkbox` e `button`.
+
+* **Estilização (`style.css`)**:
+    * Estilização externa em um arquivo `.css` separado.
+    * Uso de cores, bordas, espaçamento e fontes.
+    * Destaque para elementos interativos (botões e campos de formulário) utilizando pseudo-classes como `:hover`, `:focus` e `:visited`.
+
+* **Execução Local**:
+    * A página deve ser acessível localmente ao abrir o arquivo `index.html` em um navegador, sem a necessidade de um servidor web.
+
+---
+
+### Como Rodar
+
+Basta clonar este repositório e abrir o arquivo `index.html` diretamente no seu navegador.
